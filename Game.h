@@ -2,6 +2,7 @@
 #define _GAME_H
 
 #include "SDL2/SDL.h"
+#include "SDL2/SDL_image.h"
 
 #undef main
 class Game
@@ -25,6 +26,10 @@ private:
 	bool m_running;
 	SDL_Window* m_window;
 	SDL_Renderer* m_renderer ;
+
+	SDL_Texture* m_texture;
+	SDL_Rect m_sourceRect;
+	SDL_Rect m_destRect;
 };
 
 #endif
