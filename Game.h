@@ -4,6 +4,9 @@
 #include "SDL2/SDL.h"
 #include "SDL2/SDL_image.h"
 
+#include "TextureManager.h"
+#include "GameObject.h"
+#include "Player.h"
 #undef main
 class Game
 {
@@ -27,9 +30,15 @@ private:
 	SDL_Window* m_window;
 	SDL_Renderer* m_renderer ;
 
-	SDL_Texture* m_texture;
-	SDL_Rect m_sourceRect;
-	SDL_Rect m_destRect;
+//	SDL_Texture* m_texture;
+//	SDL_Rect m_sourceRect;
+//	SDL_Rect m_destRect;
+
+	int m_currrentFrame;
+	//TextureManager m_textureManager;
+
+	GameObject m_go;
+	Player m_player;
 };
 
 #endif

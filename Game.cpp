@@ -29,34 +29,58 @@ void Game::init(const char* title, int x, int y, int w, int h, Uint32 flag)
 
 //	SDL_Surface* tmpSurface = SDL_LoadBMP("./res/animation.bmp");
 
-	SDL_Surface* tmpSurface = IMG_Load("./res/animation.png");
 
-	m_texture = SDL_CreateTextureFromSurface(m_renderer, tmpSurface);
-	SDL_FreeSurface(tmpSurface);
+	//SDL_Surface* tmpSurface = IMG_Load("./res/animation.png");
+	//m_texture = SDL_CreateTextureFromSurface(m_renderer, tmpSurface);
+	//SDL_FreeSurface(tmpSurface);
+
+	TextureManager::Instance()->load("./res/animation.png", "animate", m_renderer);
+	//m_textureManager.load("./res/animation.png", "animate", m_renderer);
 
 	//SDL_QueryTexture(m_texture, NULL, NULL, &m_sourceRect.w, &m_sourceRect.h);
-	m_sourceRect.w = 62;;
+	/*m_sourceRect.w = 62;;
 	m_sourceRect.h = 82;
 
 	m_destRect.x = 0;
 	m_destRect.y = 0;
 	m_destRect.w = m_sourceRect.w;
-	m_destRect.h = m_sourceRect.h;
+	m_destRect.h = m_sourceRect.h;*/
+
+	m_go.Load(100, 100, 62, 82, "animate");
+	m_player.Load(300, 300, 62, 82, "animate");
 }
 void Game::render()
 {
 	SDL_SetRenderDrawColor(m_renderer, 0, 75, 127, 1);
 	SDL_RenderClear(m_renderer);
 
+
+	m_go.Draw(m_renderer);
+	m_player.Draw(m_renderer);
+
 //	SDL_RenderCopy(m_renderer, m_texture, &m_sourceRect, &m_destRect);
 
-	SDL_RenderCopyEx(m_renderer, m_texture, &m_sourceRect, &m_destRect, 0, 0, SDL_FLIP_HORIZONTAL);
+	//SDL_RenderCopyEx(m_renderer, m_texture, &m_sourceRect, &m_destRect, 0, 0, SDL_FLIP_HORIZONTAL);
+	//TextureManager::Instance()->Draw("animate", 10, 10, 62, 82, m_renderer, SDL_FLIP_NONE);
+	//TextureManager::Instance()->DrawFrame("animate", 100, 100, 62, 82, 1, m_currrentFrame, m_renderer, SDL_FLIP_HORIZONTAL);
+
+//	m_textureManager.Draw("animate", 10, 10, 62, 82, m_renderer, SDL_FLIP_NONE);
+//	m_textureManager.DrawFrame("animate", 100, 100, 62, 82, 1 , m_currrentFrame, m_renderer, SDL_FLIP_HORIZONTAL);
+
+
+
+
+
 	SDL_RenderPresent(m_renderer);
 
 }
 void Game::update()
 {
-	m_sourceRect.x = 62 * int(((SDL_GetTicks() / 100) % 5));
+	//m_sourceRect.x = 62 * int(((SDL_GetTicks() / 100) % 5));
+
+//	m_currrentFrame = int(((SDL_GetTicks() / 100) % 5));
+	m_go.Update();
+	m_player.Update();
 }
 
 
@@ -91,6 +115,8 @@ void Game::run()
 		handleEvents();
 		update();
 		render();
+
+		SDL_Delay(10);
 	}
 	clean();
 }
