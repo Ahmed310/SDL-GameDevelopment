@@ -1,31 +1,28 @@
 #include "Player.h"
 
-#include<string>
 
-Player::Player()
-{
-}
+#include"SDL2/SDL.h"
 
+Player::Player(const LoaderParams* params)
+:SDL_GameObject(params)
+{}
 
 Player::~Player()
 {
 }
 
-void Player::Load(int x, int y, int w, int h, std::string textureID)
+
+void Player::Draw()
 {
-	GameObject::Load(x, y ,w ,h ,textureID);
-}
-void Player::Draw(SDL_Renderer* renderer)
-{
-	GameObject::Draw(renderer);
+	SDL_GameObject::Draw();
 	
 }
 void Player::Update()
 {
-	GameObject::Update();
 	m_x -= 1;
+	m_currentFrame = int(((SDL_GetTicks() / 100) % 5));
 }
 void Player::Clean()
 {
-	GameObject::Clean();
+	SDL_GameObject::Clean();
 }

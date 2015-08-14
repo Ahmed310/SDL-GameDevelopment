@@ -1,35 +1,21 @@
 #ifndef GAME_OBJECT_H
 #define GAME_OBJECT_H
 
-#include"SDL2/SDL.h"
-#include<string>
+#include "LoaderParams.h"
 
 class GameObject
 {
 public:
-	GameObject();
-	~GameObject();
 
-public:
-
-	void Load(int x, int y, int w, int h, std::string textureID);
-
-	void Draw(SDL_Renderer* renderer);
-	void Update();
-	void Clean();
+	virtual void Draw() = 0;
+	virtual void Update() = 0;
+	virtual void Clean() = 0; 
 
 protected:
 
-	std::string m_textureID;
+	GameObject(const LoaderParams* params){}
+	virtual ~GameObject(){}
 
-	int m_currentFrame;
-	int m_currentRow;
-
-	int m_x;
-	int m_y;
-
-	int m_width;
-	int m_height;
 };
 
 #endif

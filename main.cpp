@@ -9,10 +9,14 @@ const int SCREEN_HEIGHT = 480;
 int main()
 {
 
-	Game* game = new Game();
+	Game::Instance()->init( "SDL2 Game Dev", 
+							SDL_WINDOWPOS_CENTERED, 
+							SDL_WINDOWPOS_CENTERED, 
+							SCREEN_WIDTH, 
+							SCREEN_HEIGHT, 
+							SDL_WINDOW_SHOWN);
 
-	game->init("SDL2 Game Dev", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
-	game->run();
+	Game::Instance()->run();
 
 	return 0;
 }

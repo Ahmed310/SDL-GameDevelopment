@@ -24,10 +24,13 @@
     <ClCompile Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\TextureManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\GameObject.cpp">
+    <ClCompile Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\Player.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\Player.cpp">
+    <ClCompile Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\Enemy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\SDL_GameObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -42,6 +45,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\Enemy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoaderParams.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\SDL_GameObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

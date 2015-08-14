@@ -6,18 +6,23 @@
 
 #include "TextureManager.h"
 #include "GameObject.h"
-#include "Player.h"
+
+
+#include <vector>
+
+
 #undef main
 class Game
 {
-public:
-	Game();
-	~Game();
-
 
 public:
 	void init(const char* title, int x, int y, int w, int h, Uint32 flag);
 	void run();
+
+	static Game* Instance();
+	inline SDL_Renderer* GetRenderer() const{ return m_renderer; }
+
+	~Game();
 
 private:
 	void render();
@@ -25,20 +30,17 @@ private:
 	void handleEvents();
 	void clean();
 
+	Game();
+	static Game* s_instance;
+
 private:
 	bool m_running;
 	SDL_Window* m_window;
 	SDL_Renderer* m_renderer ;
 
-//	SDL_Texture* m_texture;
-//	SDL_Rect m_sourceRect;
-//	SDL_Rect m_destRect;
 
-	int m_currrentFrame;
-	//TextureManager m_textureManager;
+	std::vector<GameObject*> m_gameObjects;
 
-	GameObject m_go;
-	Player m_player;
 };
 
 #endif
