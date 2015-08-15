@@ -81,6 +81,7 @@
     <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\Game.h" />
     <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\GameObject.h" />
     <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\SDL_GameObject.h" />
+    <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\Vector2D.h" />
     <ClInclude Include="LoaderParams.h" />
     <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\Player.h" />
     <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\TextureManager.h" />

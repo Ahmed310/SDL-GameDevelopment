@@ -19,7 +19,7 @@ void Player::Draw()
 }
 void Player::Update()
 {
-	m_x -= 1;
+	m_position.SetX(m_position.GetX() + 1);
 	m_currentFrame = int(((SDL_GetTicks() / 100) % 5));
 }
 void Player::Clean()

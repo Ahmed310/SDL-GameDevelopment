@@ -56,5 +56,8 @@
     <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\SDL_GameObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\Vector2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
