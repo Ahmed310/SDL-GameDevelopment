@@ -1,6 +1,8 @@
 #include "Game.h"
 #include "Player.h"
 #include "Enemy.h"
+#include"InputHandler.h"
+
 
 #include <iostream>
 
@@ -79,7 +81,7 @@ void Game::update()
 
 void Game::handleEvents()
 {
-	SDL_Event event;
+	/*SDL_Event event;
 	if (SDL_PollEvent(&event))
 	{
 		switch (event.type)
@@ -90,7 +92,10 @@ void Game::handleEvents()
 		default:
 			break;
 		}
-	}
+	}*/
+
+	InputHandler::Instance()->Update();
+
 }
 void Game::clean()
 {
@@ -105,11 +110,20 @@ void Game::run()
 {
 	while (m_running)
 	{
+		m_frameStart = SDL_GetTicks();
+
 		handleEvents();
 		update();
 		render();
 
-		SDL_Delay(10);
+		m_frameTime = SDL_GetTicks() - m_frameStart;
+
+		if (m_frameTime < DELAY_TIME)
+		{
+			SDL_Delay((int)(DELAY_TIME - m_frameTime));
+		}
+
+		
 	}
 	clean();
 }

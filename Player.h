@@ -12,6 +12,9 @@ public:
 	virtual void Draw();
 	virtual void Update();
 	virtual void Clean();
+
+private :
+	void HandleInput();
 };
 
 #endif

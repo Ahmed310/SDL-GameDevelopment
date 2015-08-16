@@ -18,6 +18,7 @@ class Game
 public:
 	void init(const char* title, int x, int y, int w, int h, Uint32 flag);
 	void run();
+	inline void quit(){ m_running = false; }
 
 	static Game* Instance();
 	inline SDL_Renderer* GetRenderer() const{ return m_renderer; }
@@ -37,7 +38,9 @@ private:
 	bool m_running;
 	SDL_Window* m_window;
 	SDL_Renderer* m_renderer ;
-
+	const Uint32 FPS = 60;
+	const Uint32 DELAY_TIME = 1000 / FPS;
+	Uint32 m_frameStart, m_frameTime;
 
 	std::vector<GameObject*> m_gameObjects;
 
