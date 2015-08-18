@@ -6,7 +6,7 @@
 
 #include "TextureManager.h"
 #include "GameObject.h"
-
+#include "GameStateMachine.h"
 
 #include <vector>
 
@@ -41,6 +41,8 @@ private:
 	const Uint32 FPS = 60;
 	const Uint32 DELAY_TIME = 1000 / FPS;
 	Uint32 m_frameStart, m_frameTime;
+
+	GameStateMachine* m_gameStateMachine;
 
 	std::vector<GameObject*> m_gameObjects;
 

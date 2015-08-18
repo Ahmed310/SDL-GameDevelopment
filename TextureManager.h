@@ -17,6 +17,7 @@ public:
 
 public:
 	bool load(std::string fileName, std::string id, SDL_Renderer* renderer);
+	void ClearFromTextureMap(std::string id);
 	void Draw(	std::string id, 
 				int x, 
 				int y, 

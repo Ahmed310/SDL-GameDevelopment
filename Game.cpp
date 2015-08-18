@@ -2,6 +2,8 @@
 #include "Player.h"
 #include "Enemy.h"
 #include"InputHandler.h"
+#include "MenuState.h"
+#include "PlayState.h"
 
 
 #include <iostream>
@@ -51,6 +53,9 @@ void Game::init(const char* title, int x, int y, int w, int h, Uint32 flag)
 
 	m_gameObjects.push_back(new Player(new LoaderParams(100, 100, 62, 82, "animate")));
 	m_gameObjects.push_back(new Enemy(new LoaderParams(10, 10, 62, 82, "animate")));
+
+	m_gameStateMachine = new GameStateMachine();
+	m_gameStateMachine->ChangeState(new MenuState());
 }
 void Game::render()
 {
@@ -60,7 +65,7 @@ void Game::render()
 //	TextureManager::Instance()->Draw("animate", 10, 10, 62,82, GetRenderer(), SDL_FLIP_NONE);
 
 //	TextureManager::Instance()->DrawFrame("animate", 100, 100, 62, 82,1,1, GetRenderer(), SDL_FLIP_NONE);
-	
+	m_gameStateMachine->Render();
 	for (std::vector<GameObject*>::size_type i = 0 ; i != m_gameObjects.size(); i++)
 	{
 		m_gameObjects[i]->Draw();
@@ -71,7 +76,7 @@ void Game::render()
 }
 void Game::update()
 {
-	
+	m_gameStateMachine->Update();
 	for (std::vector<GameObject*>::size_type i = 0; i != m_gameObjects.size(); i++)
 	{
 		m_gameObjects[i]->Update();
@@ -95,6 +100,11 @@ void Game::handleEvents()
 	}*/
 
 	InputHandler::Instance()->Update();
+
+	if (InputHandler::Instance()->IsKeyDown(SDL_SCANCODE_RETURN))
+	{
+		m_gameStateMachine->ChangeState(new PlayState());
+	}
 
 }
 void Game::clean()

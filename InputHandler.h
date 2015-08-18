@@ -3,7 +3,7 @@
 
 #include "Vector2D.h"
 #include <vector>
-
+#include "SDL2/SDL.h"
 class InputHandler
 {
 public:

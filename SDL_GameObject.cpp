@@ -4,7 +4,7 @@
 #include "Game.h"
 
 SDL_GameObject::SDL_GameObject(const LoaderParams* params)
-	: GameObject(params), m_position(params->GetX(), params->GetY()), m_velocity(0, 0), m_accelaration(0,0)
+	: GameObject(params), m_position(params->GetX(), params->GetY()), m_velocity(0.0f, 0.0f), m_accelaration(0.0f,0.0f)
 {
 	m_width = params->GetWidth();
 	m_height = params->GetHeight();

@@ -1,7 +1,6 @@
-#include "InputHandler.h"
 #include "Game.h"
+#include "InputHandler.h"
 
-#include"SDL2/SDL.h"
 
 InputHandler* InputHandler::s_instance = 0 ;
 

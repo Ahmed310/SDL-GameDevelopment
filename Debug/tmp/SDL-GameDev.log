@@ -1,5 +1,29 @@
-﻿Build started 8/17/2015 1:23:46 AM.
+﻿Build started 8/18/2015 11:29:53 AM.
+     1>Project "C:\Ahmed's data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\SDL-GameDev.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(363,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I.\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\tmp\\" /Fd"Debug\tmp\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "..\..\..\..\..\Ahmed's data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\Game.cpp" "..\..\..\..\..\Ahmed's data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\MenuState.cpp" "..\..\..\..\..\Ahmed's data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\main.cpp"
+         main.cpp
+     1>c:\ahmed's data\software projects\visual studio 2013\sdl-gamedev\sdl-gamedev\main.cpp(15): error C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(226) : see declaration of 'freopen'
+         MenuState.cpp
+     1>c:\ahmed's data\software projects\visual studio 2013\sdl-gamedev\sdl-gamedev\gamestate.h(3): error C2011: 'GameState' : 'class' type redefinition
+                 c:\ahmed's data\software projects\visual studio 2013\sdl-gamedev\sdl-gamedev\gamestate.h(3) : see declaration of 'GameState'
+     1>c:\ahmed's data\software projects\visual studio 2013\sdl-gamedev\sdl-gamedev\menustate.cpp(9): error C2027: use of undefined type 'GameState'
+                 c:\ahmed's data\software projects\visual studio 2013\sdl-gamedev\sdl-gamedev\gamestate.h(3) : see declaration of 'GameState'
+     1>c:\ahmed's data\software projects\visual studio 2013\sdl-gamedev\sdl-gamedev\menustate.cpp(9): fatal error C1903: unable to recover from previous error(s); stopping compilation
+         Game.cpp
+     1>c:\ahmed's data\software projects\visual studio 2013\sdl-gamedev\sdl-gamedev\gamestate.h(3): error C2011: 'GameState' : 'class' type redefinition
+                 c:\ahmed's data\software projects\visual studio 2013\sdl-gamedev\sdl-gamedev\gamestate.h(3) : see declaration of 'GameState'
+     1>c:\ahmed's data\software projects\visual studio 2013\sdl-gamedev\sdl-gamedev\menustate.h(8): error C2504: 'GameState' : base class undefined
+     1>c:\ahmed's data\software projects\visual studio 2013\sdl-gamedev\sdl-gamedev\playstate.h(7): error C2504: 'GameState' : base class undefined
+     1>c:\ahmed's data\software projects\visual studio 2013\sdl-gamedev\sdl-gamedev\game.cpp(58): error C2664: 'void GameStateMachine::ChangeState(GameState *)' : cannot convert argument 1 from 'MenuState *' to 'GameState *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\ahmed's data\software projects\visual studio 2013\sdl-gamedev\sdl-gamedev\game.cpp(106): error C2664: 'void GameStateMachine::ChangeState(GameState *)' : cannot convert argument 1 from 'PlayState *' to 'GameState *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+         Generating Code...
+     1>Done Building Project "C:\Ahmed's data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\SDL-GameDev.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:00.01
+Time Elapsed 00:00:33.45
