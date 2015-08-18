@@ -1,4 +1,8 @@
+#ifndef GAME_STATE_H
+#define GAME_STATE_H
+
 #include<string>
+
 class GameState
 {
 public:
@@ -8,3 +12,5 @@ public:
 	virtual bool OnExit() = 0;
 	virtual std::string GetStateID() const = 0;
 };
+
+#endif

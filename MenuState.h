@@ -7,8 +7,7 @@
 class MenuState : public GameState
 {
 public:
-	MenuState();
-	~MenuState();
+	
 
 	virtual void Update();
 	virtual void Render();

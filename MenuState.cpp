@@ -5,14 +5,6 @@
 #include "MenuButton.h"
 const std::string MenuState::s_menuID = "MENU";
 
-MenuState::MenuState()
-{
-}
-
-
-MenuState::~MenuState()
-{
-}
 
 
 void MenuState::Update()
@@ -42,7 +34,7 @@ bool MenuState::OnEnter()
 		return false;
 	}
 	GameObject* button1 = new MenuButton(new LoaderParams(100, 100,200, 70, "playbutton"));
-	GameObject* button2 = new MenuButton(new LoaderParams(100, 300,200, 70, "exitbutton"));
+	GameObject* button2 = new MenuButton(new LoaderParams(100, 175,200, 70, "exitbutton"));
 	m_gameObjects.push_back(button1);
 	m_gameObjects.push_back(button2);
 	std::cout << "entering MenuState\n";

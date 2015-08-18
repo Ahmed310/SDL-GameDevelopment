@@ -6,9 +6,7 @@
 class PlayState : public GameState
 {
 public:
-	PlayState();
-	~PlayState();
-
+	
 	virtual void Update();
 	virtual void Render();
 	virtual bool OnEnter();

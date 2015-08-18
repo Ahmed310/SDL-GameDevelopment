@@ -7,8 +7,7 @@
 class GameStateMachine
 {
 public:
-	GameStateMachine();
-	~GameStateMachine();
+	
 
 	void PushState(GameState* state);
 	void ChangeState(GameState* state);

@@ -1,13 +1,6 @@
 #include "GameStateMachine.h"
 
-GameStateMachine::GameStateMachine()
-{
-}
 
-
-GameStateMachine::~GameStateMachine()
-{
-}
 
 void GameStateMachine::PushState(GameState* state)
 {

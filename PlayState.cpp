@@ -3,14 +3,7 @@
 #include <iostream>
 const std::string PlayState::s_playID = "PLAY";
 
-PlayState::PlayState()
-{
-}
 
-
-PlayState::~PlayState()
-{
-}
 
 
 void PlayState::Update()
