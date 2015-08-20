@@ -28,6 +28,13 @@ InputHandler::~InputHandler()
 {
 }
 
+void InputHandler::Reset()
+{
+    m_mouseButtonStates[LEFT] = false;
+	m_mouseButtonStates[MIDDLE] = false;
+	m_mouseButtonStates[RIGHT] = false;
+}
+
 bool InputHandler::GetMouseButtonState(int buttonNumber)
 {
 	return m_mouseButtonStates[buttonNumber];

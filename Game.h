@@ -22,6 +22,8 @@ public:
 
 	static Game* Instance();
 	inline SDL_Renderer* GetRenderer() const{ return m_renderer; }
+	inline GameStateMachine* GetStateMachine(){ return m_gameStateMachine; }
+
 
 	~Game();
 

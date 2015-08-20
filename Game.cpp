@@ -66,10 +66,10 @@ void Game::render()
 
 //	TextureManager::Instance()->DrawFrame("animate", 100, 100, 62, 82,1,1, GetRenderer(), SDL_FLIP_NONE);
 	m_gameStateMachine->Render();
-	for (std::vector<GameObject*>::size_type i = 0 ; i != m_gameObjects.size(); i++)
+	/*for (std::vector<GameObject*>::size_type i = 0 ; i != m_gameObjects.size(); i++)
 	{
 		m_gameObjects[i]->Draw();
-	}
+	}*/
 
 	SDL_RenderPresent(m_renderer);
 
@@ -77,10 +77,10 @@ void Game::render()
 void Game::update()
 {
 	m_gameStateMachine->Update();
-	for (std::vector<GameObject*>::size_type i = 0; i != m_gameObjects.size(); i++)
+	/*for (std::vector<GameObject*>::size_type i = 0; i != m_gameObjects.size(); i++)
 	{
 		m_gameObjects[i]->Update();
-	}
+	}*/
 }
 
 

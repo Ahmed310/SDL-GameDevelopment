@@ -16,6 +16,7 @@ public:
 	Vector2D* GetMousePosition();
 
 	bool IsKeyDown(SDL_Scancode key);
+	void Reset();
 
 private:
 	InputHandler();

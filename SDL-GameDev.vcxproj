@@ -72,25 +72,30 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\Enemy.cpp" />
     <ClCompile Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\Game.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\GameOverState.cpp" />
     <ClCompile Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\GameStateMachine.cpp" />
     <ClCompile Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\InputHandler.cpp" />
     <ClCompile Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\main.cpp" />
     <ClCompile Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\MenuButton.cpp" />
     <ClCompile Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\MenuState.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\PauseState.cpp" />
     <ClCompile Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\Player.cpp" />
     <ClCompile Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\PlayState.cpp" />
     <ClCompile Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\SDL_GameObject.cpp" />
     <ClCompile Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\TextureManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\AnimatedGraphic.h" />
     <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\Enemy.h" />
     <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\Game.h" />
     <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\GameObject.h" />
+    <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\GameOverState.h" />
     <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\GameState.h" />
     <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\GameStateMachine.h" />
     <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\InputHandler.h" />
     <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\MenuButton.h" />
     <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\MenuState.h" />
+    <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\PauseState.h" />
     <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\PlayState.h" />
     <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\SDL_GameObject.h" />
     <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\Vector2D.h" />

@@ -2,8 +2,10 @@
 #define MENU_STATE_H
 
 #include "GameState.h"
-#include "GameObject.h"
 #include <vector>
+#include <string>
+class GameObject;
+
 class MenuState : public GameState
 {
 public:
@@ -19,6 +21,9 @@ public:
 private:
 	static const std::string s_menuID;
 	std::vector<GameObject*> m_gameObjects;
+
+	static void MenuToPlay();
+	static void ExitFromMenu();
 };
 
 #endif

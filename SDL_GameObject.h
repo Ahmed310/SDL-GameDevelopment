@@ -13,6 +13,11 @@ public:
 	virtual void Update();
 	virtual void Clean();
 
+
+	inline Vector2D& GetPosition() { return m_position; }
+	inline int GetWidth() { return m_width; }
+	inline int GetHeight() { return m_height; }
+
 	~SDL_GameObject();
 
 protected:

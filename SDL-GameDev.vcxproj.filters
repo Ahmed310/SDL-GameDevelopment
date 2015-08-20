@@ -45,6 +45,15 @@
     <ClCompile Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\GameStateMachine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\MenuButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\PauseState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\GameOverState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\Game.h">
@@ -84,6 +93,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\GameStateMachine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\MenuButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\PauseState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\AnimatedGraphic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ahmed%27s data\software projects\visual studio 2013\SDL-GameDev\SDL-GameDev\GameOverState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

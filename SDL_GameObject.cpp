@@ -24,15 +24,32 @@ SDL_GameObject::~SDL_GameObject()
 
 void SDL_GameObject::Draw()
 {
-	TextureManager::Instance()->DrawFrame( m_textureID, 
-										   m_position.GetX(), 
-										   m_position.GetY(), 
-										   m_width, 
-										   m_height, 
-										   m_currentRow, 
-										   m_currentFrame, 
-										   Game::Instance()->GetRenderer(), 
-										   SDL_FLIP_NONE);
+
+	if (m_velocity.GetX() > 0)
+	{
+		TextureManager::Instance()->DrawFrame(m_textureID,
+			m_position.GetX(),
+			m_position.GetY(),
+			m_width,
+			m_height,
+			m_currentRow,
+			m_currentFrame,
+			Game::Instance()->GetRenderer(),
+			SDL_FLIP_HORIZONTAL);
+	}
+	else
+	{
+		TextureManager::Instance()->DrawFrame(m_textureID,
+			m_position.GetX(),
+			m_position.GetY(),
+			m_width,
+			m_height,
+			m_currentRow,
+			m_currentFrame,
+			Game::Instance()->GetRenderer(),
+			SDL_FLIP_NONE);
+	}
+	
 }
 void SDL_GameObject::Update()
 {

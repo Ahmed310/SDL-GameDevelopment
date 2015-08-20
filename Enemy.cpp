@@ -4,6 +4,9 @@
 Enemy::Enemy(const LoaderParams* params)
 :SDL_GameObject(params)
 {
+	m_velocity.SetY(2);
+	m_velocity.SetX(0.001f);
+
 }
 
 
@@ -18,9 +21,16 @@ void Enemy::Draw()
 void Enemy::Update()
 {
 
-	m_velocity.SetX(1);
-	m_velocity.SetY(1);
-	m_currentFrame = int(((SDL_GetTicks() / 100) % 5));
+	m_currentFrame = int(((SDL_GetTicks() / 100) % 4));
+
+	if (m_position.GetY() < 0)
+	{
+		m_velocity.SetY(2);
+	}
+	else if (m_position.GetY() > 450)
+	{
+		m_velocity.SetY(-2);
+	}
 
 	SDL_GameObject::Update();
 }
