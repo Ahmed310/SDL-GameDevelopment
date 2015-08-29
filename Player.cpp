@@ -3,12 +3,14 @@
 
 #include"SDL2/SDL.h"
 
-Player::Player(const LoaderParams* params)
-:SDL_GameObject(params)
+Player::Player()
+:SDL_GameObject()
 {}
 
-Player::~Player()
+
+void Player::load(const LoaderParams *params)
 {
+	SDL_GameObject::load(params);
 }
 
 void Player::HandleInput()

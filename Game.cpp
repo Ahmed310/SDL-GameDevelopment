@@ -1,13 +1,11 @@
 #include "Game.h"
 #include "Player.h"
 #include "Enemy.h"
-#include"InputHandler.h"
-#include "MenuState.h"
+#include "InputHandler.h"
 #include "PlayState.h"
-
-
+#include "MenuButton.h"
 #include <iostream>
-
+#include "MainMenuState.h"
 Game* Game::s_instance = 0;
 
 Game* Game::Instance()
@@ -49,13 +47,13 @@ void Game::init(const char* title, int x, int y, int w, int h, Uint32 flag)
 	}
 
 	TextureManager::Instance()->load("./res/animation.png", "animate", m_renderer);
+//	GameObjectFactory::Instance()->RegisterType("MenuButton", new MenuButtonCreator());
 
-
-	m_gameObjects.push_back(new Player(new LoaderParams(100, 100, 62, 82, "animate")));
-	m_gameObjects.push_back(new Enemy(new LoaderParams(10, 10, 62, 82, "animate")));
+//	m_gameObjects.push_back(new Player(new LoaderParams(100, 100, 62, 82, "animate")));
+//	m_gameObjects.push_back(new Enemy(new LoaderParams(10, 10, 62, 82, "animate")));
 
 	m_gameStateMachine = new GameStateMachine();
-	m_gameStateMachine->ChangeState(new MenuState());
+	m_gameStateMachine->ChangeState(new MainMenuState());
 }
 void Game::render()
 {

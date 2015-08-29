@@ -47,10 +47,10 @@ bool PlayState::OnEnter()
 		return false;
 	}
 
-	GameObject* player = new Player(new LoaderParams(500, 100, 115, 65, "helicopter"));
-	GameObject* enemy = new Enemy(new LoaderParams(100, 100, 115, 65, "helicopter"));
-	m_gameObjects.push_back(player);
-	m_gameObjects.push_back(enemy);
+//	GameObject* player = new Player(new LoaderParams(500, 100, 115, 65, "helicopter"));
+//	GameObject* enemy = new Enemy(new LoaderParams(100, 100, 115, 65, "helicopter"));
+//	m_gameObjects.push_back(player);
+//	m_gameObjects.push_back(enemy);
 
 	std::cout << "PlayState Enters ! \n";
 	return true;

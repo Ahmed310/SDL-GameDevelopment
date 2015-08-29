@@ -1,8 +1,8 @@
 #include "Enemy.h"
 
 #include"SDL2/SDL.h"
-Enemy::Enemy(const LoaderParams* params)
-:SDL_GameObject(params)
+Enemy::Enemy()
+:SDL_GameObject()
 {
 	m_velocity.SetY(2);
 	m_velocity.SetX(0.001f);

@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<STATES>
+	<!--The Menu State-->
+	<MENU>
+		<TEXTURES>
+			<texture filename="button.png" ID="playbutton"/>
+			<texture filename="exit.png" ID="exitbutton"/>
+		</TEXTURES>
+		<OBJECTS>
+			<object type="MenuButton" x="100" y="100" width="400" height="100" textureID="playbutton" numFrames="0" callbackID="1"/>
+			<object type="MenuButton" x="100" y="300" width="400" height="100" textureID="exitbutton" numFrames="0" callbackID="2"/>
+		</OBJECTS>
+	</MENU>
+	<!--The Play State-->
+	<PLAY>
+	</PLAY>
+	<!-- The Game Over State -->
+	<GAMEOVER>
+	</GAMEOVER>
+</STATES>

@@ -39,14 +39,14 @@ bool MenuState::OnEnter()
 	{
 		return false;
 	}
-	if (!TextureManager::Instance()->load("./res/button.png","exitbutton", Game::Instance()->GetRenderer()))
+	if (!TextureManager::Instance()->load("./res/exit.png","exitbutton", Game::Instance()->GetRenderer()))
 	{
 		return false;
 	}
-	GameObject* button1 = new MenuButton(new LoaderParams(100, 100,200, 70, "playbutton"),MenuToPlay);
-	GameObject* button2 = new MenuButton(new LoaderParams(100, 175,200, 70, "exitbutton"),ExitFromMenu);
-	m_gameObjects.push_back(button1);
-	m_gameObjects.push_back(button2);
+//	GameObject* button1 = new MenuButton(new LoaderParams(100, 100,200, 70, "playbutton"),MenuToPlay);
+//	GameObject* button2 = new MenuButton(new LoaderParams(100, 175,200, 70, "exitbutton"),ExitFromMenu);
+//	m_gameObjects.push_back(button1);
+//	m_gameObjects.push_back(button2);
 	std::cout << "entering MenuState\n";
 	return true;
 }

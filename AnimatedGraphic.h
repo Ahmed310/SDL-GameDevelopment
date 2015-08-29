@@ -7,7 +7,7 @@ class AnimatedGraphic : public SDL_GameObject
 {
 public:
 	AnimatedGraphic(const LoaderParams* params, int animSpeed, int frameNum)
-		:SDL_GameObject(params), m_animSpeed(animSpeed), m_numFrames(frameNum)
+		:SDL_GameObject(), m_animSpeed(animSpeed), m_numFrames(frameNum)
 	{}
 
 	void Update()

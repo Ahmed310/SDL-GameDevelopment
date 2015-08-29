@@ -10,10 +10,12 @@ public:
 	virtual void Draw() = 0;
 	virtual void Update() = 0;
 	virtual void Clean() = 0; 
+	// new load function
+	virtual void load(const LoaderParams* pParams) = 0;
 
 protected:
 
-	GameObject(const LoaderParams* params){}
+	GameObject(){}
 	virtual ~GameObject(){}
 
 };
